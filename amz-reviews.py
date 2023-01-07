@@ -9,7 +9,7 @@ reviewlist = []
 
 
 def get_soup(url):
-
+    # you need splash server running on you machine
     r = requests.get(
         "http://localhost:8050/render.html",
         params={"url": url, "wait": 2}
